@@ -1,0 +1,16 @@
+{
+  "name": "ethrise",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ risedle/ethrise",
+    "create-local": "graph create --node http://localhost:8020/ risedle/ethrise",
+    "remove-local": "graph remove --node http://localhost:8020/ risedle/ethrise",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 risedle/ethrise"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.26.0",
+    "@graphprotocol/graph-ts": "0.24.1"
+  }
+}
